@@ -1,0 +1,18 @@
+﻿  main.cpp
+c:\users\tom\desktop\lab8\lab8\main.cpp(21): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\tom\desktop\lab8\lab8\main.cpp(22): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\tom\desktop\lab8\lab8\main.cpp(23): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\tom\desktop\lab8\lab8\main.cpp(74): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\tom\desktop\lab8\lab8\main.cpp(75): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\tom\desktop\lab8\lab8\main.cpp(86): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\tom\desktop\lab8\lab8\main.cpp(87): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\tom\desktop\lab8\lab8\main.cpp(88): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(2430): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(2430): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\users\tom\desktop\lab8\lab8\bitmap_image.hpp(226): note: see reference to function template instantiation '_OutIt *std::copy<const unsigned char*,unsigned char*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=unsigned char *,
+              _InIt=const unsigned char *
+          ]
+  Lab8.vcxproj -> C:\Users\Tom\Desktop\Lab8\Debug\Lab8.exe
