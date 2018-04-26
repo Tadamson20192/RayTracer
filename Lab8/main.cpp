@@ -17,7 +17,7 @@ ofstream myfile;
 
 
 float vpX = 1, vpY = 1;
-vec3 light(0, 0, .75);
+vec3 light(0, 1, -2);
 
 std::vector<Sphere> world = {
 	Sphere(vec3(0, 0, 1), .33, vec3(1,1,0)),
@@ -26,7 +26,8 @@ std::vector<Sphere> world = {
 };
 
 std::vector<Triangle> triangles = {
-	Triangle(vec3(0,.5,1), vec3(-.25,-.5,1), vec3(.25,-.5,1), vec3(1,1,0))
+	Triangle(vec3(0,.5,3), vec3(-.25,-.5,1), vec3(.25,-.5,1), vec3(1,1,0)),
+	Triangle(vec3(0,.75,2), vec3(-.25,-.5,4), vec3(.25,-.5,4), vec3(1,0,0))
 };
 
 
@@ -109,8 +110,8 @@ float triangleInter(vec3 p0, vec3 p1, vec3 p2, vec3 d, vec3 e) {
 	u = u / determ;
 	v = v / determ;
 	t = t / determ;
-
-	if ((1 - u - v) > 0) {
+	
+	if ((1 - u - v) > 0 && u > 0 && u < 1 && v > 0 && v < 1) {
 		return t;
 	}
 	else { return -1; }
@@ -198,7 +199,7 @@ int main(int argc, char** argv) {
 
 			int circle = -1;
 			float minT = 999999;
-			for (int i = 0; i < 1; i++) {
+			for (int i = 0; i < 2; i++) {
 				float t = triangleInter(triangles[i].getP1(), triangles[i].getP2(), triangles[i].getP3(), d, e);
 				//cout << t << endl;
 				if (t < minT && t > 0) {
@@ -210,7 +211,7 @@ int main(int argc, char** argv) {
 			int shadeCount = 1;
 
 			if (circle > 0) {
-				for (int i = 0; i < 1; i++) {
+				for (int i = 0; i < 2; i++) {
 					if (i != circle) {
 						float t = triangleInter(triangles[i].getP1(), triangles[i].getP2(), triangles[i].getP3(), d, e);
 						if (t > 0) {

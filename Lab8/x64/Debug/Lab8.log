@@ -1,0 +1,19 @@
+﻿  main.cpp
+c:\users\tom\desktop\program3\program3\program3\lab8\main.cpp(23): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\tom\desktop\program3\program3\program3\lab8\main.cpp(24): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\tom\desktop\program3\program3\program3\lab8\main.cpp(25): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\tom\desktop\program3\program3\program3\lab8\main.cpp(188): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\tom\desktop\program3\program3\program3\lab8\main.cpp(189): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\tom\desktop\program3\program3\program3\lab8\main.cpp(230): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\tom\desktop\program3\program3\program3\lab8\main.cpp(231): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\tom\desktop\program3\program3\program3\lab8\main.cpp(232): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(2430): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(2430): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\users\tom\desktop\program3\program3\program3\lab8\bitmap_image.hpp(226): note: see reference to function template instantiation '_OutIt *std::copy<const unsigned char*,unsigned char*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=unsigned char *,
+              _InIt=const unsigned char *
+          ]
+c:\users\tom\desktop\program3\program3\program3\lab8\main.cpp(59): warning C4715: 'determineIntersection': not all control paths return a value
+  Lab8.vcxproj -> C:\Users\Tom\Desktop\Program3\Program3\Program3\x64\Debug\Program3.exe
