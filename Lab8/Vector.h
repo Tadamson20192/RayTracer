@@ -20,7 +20,9 @@ public:
 	
 	
 	}
-
+	float getX() { return x; }
+	float getY() { return y; }
+	float getZ() { return z; }
 
 	vec3 scale(float scalar) {
 		return vec3(x*scalar, y*scalar, z *scalar);
@@ -41,6 +43,7 @@ public:
 		return vec3(outX, outY, outZ);
 	}
 
+
 	static vec3 add(vec3 vec1, vec3 vec2) {
 		float outX = vec1.x + vec2.x;
 		float outY = vec1.y + vec2.y;
@@ -53,6 +56,13 @@ public:
 			(vec1.y * vec2.y) +
 			(vec1.z * vec2.z));
 	
+	}
+
+	void normalize() {
+		float distance = sqrt((x*x) + (y*y) + (z*z));
+		x = x / distance;
+		y = y / distance;
+		z = z / distance;
 	}
 
 	void printVector() {
